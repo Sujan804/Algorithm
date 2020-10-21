@@ -7,7 +7,7 @@ int modularExponentiation( int x, int n, int M){
             result = (result * x)%M;
         }
         x = (x*x)%M;
-        n >>= 2;//Bitwise right shift to make half of n
+        n >>= 1;//Bitwise right shift to make half of n
     }
     return result;
 
